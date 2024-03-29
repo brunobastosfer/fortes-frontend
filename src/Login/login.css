@@ -1,108 +1,122 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.input-login-form {
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  margin: 6px 0;
+  height: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-login-form::-moz-focus-inner {
+  border: 1px yellow;
+}
+
+.button-login-form {
+  margin: 10px 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 2px;
+  border: 0 none;
+  outline: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input:focus {
+  border: 1px solid rgb(51, 51, 51);
+}
+
+.button-login-form {
+  background-color: #6d9bf9;
+  padding: 10px;
+}
+
+#button-form:hover {
+  cursor: pointer;
+}
+
+.button-back-form {
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  width: 120px;
+  background-color: #8b6df9;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.signup-text span {
+  text-decoration: underline;
+  color: #6d9bf9;
+  margin-left: 5px;
+}
+
+.signup-text span:hover {
+  cursor: pointer;
+}
+
+.lost-account {
+  text-decoration: underline;
+  color: #6d9bf9;
+}
+
+.lost-account:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    height: auto;
   }
   
   .login-container {
-    flex: 1;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
   }
-
-  .login-form input:focus {
-        border: 1px solid rgb(51, 51, 51);
-  }
-  
-  .logo {
-    width: 100%;
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  
-  .input-login-form {
-    padding: 8px;
-    border-radius: 2px;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    margin: 6px 0;
-    height: 12px;
-    padding: 10px;
-    margin-bottom: 15px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .button-login-form {
-    margin: 20px 0;
-    box-shadow: 0 0 0 0;
-    border-radius: 2px;
-    border: 0 none;
-    outline: 0;
-  }
-
-  
-  .login-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px; /* Aumentei o espaço entre o botão e o último input */
-    background-color: #8ab6ff; /* Azul claro */
-    color: #fff; /* Letras brancas */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button-login-form {
-    background-color: #6d9bf9;
-    padding: 10px;
-  }
-
-  .lost-account {
-    color: #6d9bf9;
-    text-decoration: underline;
-  }
-
-  .lost-account:hover {
-    cursor: pointer;
-  }
-  
-  .signup-text {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .signup-text span {
-    padding-left: 4px;
-    color: #6d9bf9;
-    text-decoration: underline;
-  }
-
-  .signup-text span:hover {
-    cursor: pointer;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      height: auto;
-    }
-    
-    .login-container {
-      margin-top: 20px;
-    }
-  }
-  
+}

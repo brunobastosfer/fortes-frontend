@@ -21,7 +21,9 @@ function Register({ toggleForm }) {
   return (
     <form className="register-form" onSubmit={handleSignup}>
       <input className="input-register-form" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+      <p>Error</p>
       <input  className="input-register-form" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+      <p>Error</p>
       <button className="button-register-form" type="submit">Cadastrar</button>
       <p className="signup-text">Já possui uma conta? 
       <span onClick={toggleForm}>

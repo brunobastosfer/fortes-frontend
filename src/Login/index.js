@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './login.css';
 import Register from '../Register';
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [isRegisterForm, setIsRegisterForm] = useState(false);
@@ -18,6 +19,7 @@ function Login() {
     const user = users.find((u) => u.email === email && u.password === password);
 
     if (user) {
+      <Link to={"/"} />
     } else {
       Swal.fire({
         icon: "error",
@@ -38,7 +40,9 @@ function Login() {
             <>
               <form className="login-form" onSubmit={handleSignin}>
                 <input className="input-login-form" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+                  <p>Error</p>
                 <input  className="input-login-form" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                  <p>Error</p>
                 <button className="button-login-form" type="submit">Login</button>
               </form>
               <p className="lost-account">Esqueci minha senha</p>
