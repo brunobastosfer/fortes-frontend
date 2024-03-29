@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-container {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.input-login-form {
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  margin: 6px 0;
+  height: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-login-form::-moz-focus-inner {
+  border: 1px yellow;
+}
+
+.button-login-form {
+  margin: 20px 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 2px;
+  border: 0 none;
+  outline: 0;
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px; /* Aumentei o espaço entre o botão e o último input */
+  background-color: #8ab6ff; /* Azul claro */
+  color: #fff; /* Letras brancas */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-login-form {
+  background-color: #6d9bf9;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .login-container {
+    margin-top: 20px;
   }
 }
